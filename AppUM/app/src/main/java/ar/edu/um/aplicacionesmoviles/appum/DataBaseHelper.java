@@ -57,7 +57,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public String searchPass(String username)
     {
         db = getReadableDatabase();
-        String query = "select username, pass from "+TABLE_NAME;
+        String query = "select username, password from "+TABLE_NAME;
         Cursor cursor = db.rawQuery(query,null);
         String a,b;
         b = "not found";

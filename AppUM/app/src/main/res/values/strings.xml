@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppUM</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="app_movil">APP MOVIL</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="estoy_en_el_menu">Estoy en el menu</string>
+    <string name="sing_up">SING UP</string>
+</resources>

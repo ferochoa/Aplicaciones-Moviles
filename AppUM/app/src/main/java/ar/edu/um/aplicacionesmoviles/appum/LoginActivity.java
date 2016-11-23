@@ -24,7 +24,7 @@ EditText edt2;
     public void check(View view)
     {
         String strName = edt1.getText().toString();
-        String strPass = edt1.getText().toString();
+        String strPass = edt2.getText().toString();
 
         String password = helper.searchPass(strName);
 

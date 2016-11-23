@@ -2,6 +2,7 @@ package ar.edu.um.aplicacionesmoviles.appum;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -22,7 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
         username = (EditText)findViewById(R.id.editText3);
     }
 
-    public void onSignUp()
+    public void onSignUp(View view)
     {
         String nameStr = name.getText().toString();
         String passStr = password.getText().toString();

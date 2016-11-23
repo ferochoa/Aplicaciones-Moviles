@@ -20,26 +20,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="17dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_alignStart="@+id/editText"
-        android:id="@+id/editText2" />
-
     <TextView
         android:text="Password:"
         android:layout_width="wrap_content"
@@ -73,31 +53,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/editText3"
         android:layout_alignBaseline="@+id/textView7"
         android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        tools:ignore="LabelFor,RelativeOverlap" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        tools:ignore="LabelFor"
+        android:layout_alignBottom="@+id/textView5"
         android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
-        android:layout_marginBottom="23dp"
-        android:id="@+id/editText6"
-        android:layout_above="@+id/editText3"
+        android:id="@+id/editText"
+        tools:ignore="LabelFor,RelativeOverlap"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Confirm Password"
+        android:text="Confirm Pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView8"
-        android:textSize="17sp"
-        android:layout_alignBaseline="@+id/editText6"
-        android:layout_alignBottom="@+id/editText6"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/textView"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/editText2"
+        android:id="@+id/editText6"
+        tools:ignore="LabelFor" />
 </RelativeLayout>

@@ -11,6 +11,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText password;
     EditText password2;
     EditText username;
+    DataBaseHelper helper = new DataBaseHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +33,18 @@ public class RegisterActivity extends AppCompatActivity {
 
         if(!passStr.equals(pass2Str))
         {
-            Toast passNotification = Toast.makeText(this, "Password dont match", Toast.LENGTH_LONG);
+            Toast passNotification = Toast.makeText(this, "Password don't match", Toast.LENGTH_LONG);
             passNotification.show();
+        }
+        else
+        {
+            Contact c = new Contact();
+            c.setName(nameStr);
+            c.setPassword(passStr);
+            c.setUsername(userStr);
+
+            helper.insertContact(c);
+
         }
     }
 }
